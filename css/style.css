@@ -17,10 +17,35 @@ body {
     opacity: 0.8;
 }
 
+/* Estilo y animacion del navbar */
+.nav-item {
+    margin: 5px;
+}
+
+.nav-item a{
+    font-size: large;
+    color: #fff !important;
+}
+
+.active,
+.nav-item:hover {
+    background-color: rgb(125, 137, 247);
+
+    animation: pulse; 
+    animation-duration: 2s;
+}
+
+/* Estilo y animacion de imagenes card-img */
+.card-img-top:hover {
+    animation: heartBeat;
+    animation-duration: 2s;
+}
 
 footer  a{
     text-decoration: none;
 }
+
+/* DISEÑO RESPONSIVE */
 
 @media (max-width: 480px) {
     footer {
