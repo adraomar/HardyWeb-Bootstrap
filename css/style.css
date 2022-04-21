@@ -17,19 +17,6 @@ body {
     opacity: 0.8;
 }
 
-.nav-item a {
-    color: #fff;
-}
-
-.active,
-.nav-item:hover {
-    background-color: tomato;
-    color: #fff !important;
-}   
-
-.nav-item a:hover {
-    color: #fff !important;
-} 
 
 footer  a{
     text-decoration: none;
