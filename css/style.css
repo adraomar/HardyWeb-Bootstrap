@@ -15,7 +15,8 @@
   }
 }
 body {
-  font-family: "Roboto", sans-serif;
+  /* Estilo y animacion del navbar */
+  /* Estilo y animacion de imagenes card-img */
 }
 body header .bg-image {
   width: 100%;
@@ -23,19 +24,26 @@ body header .bg-image {
   max-height: 400px;
   opacity: 0.8;
 }
-body header .nav-item:hover {
-  background-color: tomato;
+body .nav-item {
+  margin: 5px;
+  font-size: large;
   color: #fff !important;
 }
-body header .nav-item:hover .nav-item a {
-  color: #fff;
+body .nav-item:hover {
+  background-color: rgb(125, 137, 247);
+  animation: pulse;
+  animation-duration: 2s;
 }
-body header .nav-item:hover .nav-item a:hover {
+body .nav-item .nav-item a {
+  font-size: large;
   color: #fff !important;
 }
-body header .active {
-  background-color: tomato;
-  color: #fff !important;
+body .active {
+  background-color: rgb(125, 137, 247);
+}
+body .card-img-top:hover {
+  animation: heartBeat;
+  animation-duration: 2s;
 }
 body footer a {
   text-decoration: none;

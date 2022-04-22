@@ -3,10 +3,9 @@
 @import "mediasquerys";
 
 $colBlanco: #fff;
-$colTomato: tomato;
+$colGeneral: rgb(125, 137, 247);
 
 body {
-    font-family: 'Roboto', sans-serif;
 
     header {
         .bg-image {
@@ -15,24 +14,37 @@ body {
             max-height: 400px;
             opacity: 0.8;
         }
+    }
 
-        .nav-item:hover {
-            background-color: $colTomato;
-            color: $colBlanco !important;
+    /* Estilo y animacion del navbar */
+    .nav-item {
+        margin: 5px;
+        font-size: large;
+        color: $colBlanco !important;
 
-            .nav-item a {
-                color: $colBlanco;
-                &:hover {
-                    color: $colBlanco !important;
-                }
-            }
-        } 
+        &:hover{
+            background-color: $colGeneral;
 
-        .active {
-            background-color: $colTomato;
+            animation: pulse; 
+            animation-duration: 2s;
+        }
+
+        .nav-item a{
+            font-size: large;
             color: $colBlanco !important;
         }
+
     }
+
+    .active {
+        background-color: $colGeneral;
+    }
+
+    /* Estilo y animacion de imagenes card-img */
+    .card-img-top:hover {
+        animation: heartBeat;
+        animation-duration: 2s;
+    }    
 
     footer  a{
         text-decoration: none;
