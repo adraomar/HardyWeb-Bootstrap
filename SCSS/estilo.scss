@@ -1,6 +1,8 @@
 @import "fuentes";
 @import "reseteo";
 @import "mediasquerys";
+@import "mixins";
+@import "colores";
 
 body {
 
@@ -40,7 +42,9 @@ body {
         animation-duration: 2s;
     }
 
-    footer a {
-        text-decoration: none;
+    footer {
+        a {
+            text-decoration: none;
+        }
     }
 }
