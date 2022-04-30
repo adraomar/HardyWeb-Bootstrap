@@ -1,5 +1,21 @@
-@media (max-width: 480px) {
-    footer {
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+@mixin breakpoint($tamanio) {
+    @if map-has-key($breakpoints, $tamanio) {
+      @media (min-width: #{map-get($breakpoints, $tamanio)}) {
+              @content;
+          }
+      }
+}
+
+footer {
+    @include breackpoint (sm){
         display: flex;
         flex-direction: column;
         justify-content: center;
