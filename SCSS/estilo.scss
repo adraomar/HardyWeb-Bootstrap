@@ -2,16 +2,6 @@
 @import "reseteo";
 @import "mediasquerys";
 
-$colBlanco: #fff;
-$colGeneral: rgb(125, 137, 247);
-
-@mixin sizeImage($width, $height, $max-height, $opacity) {
-    width: $width;
-    height: $height;
-    max-height: $max-height;
-    opacity: $opacity;
-}
-
 body {
 
     header {
