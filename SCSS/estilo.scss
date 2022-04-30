@@ -3,16 +3,14 @@
 @import "mediasquerys";
 @import "mixins";
 @import "colores";
+@import "redes";
 
 body {
-
     header {
         .bg-image {
             @include sizeImage(100%, 400px, 400px, 0.8);
         }
     }
-
-    /* Estilo y animacion del navbar */
     .nav-item {
         margin: 5px;
         font-size: large;
@@ -31,17 +29,13 @@ body {
         }
 
     }
-
     .active {
         background-color: $colGeneral;
     }
-
-    /* Estilo y animacion de imagenes card-img */
     .card-img-top:hover {
         animation: heartBeat;
         animation-duration: 2s;
     }
-
     footer {
         a {
             text-decoration: none;

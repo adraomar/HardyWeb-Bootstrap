@@ -1,0 +1,17 @@
+$instagram: #B5E6F5;
+$twitter: #FFB2AD;
+$facebook: #ADC9EA;
+
+$colors: map-merge((
+        "instagram": $blue,
+        "facebook": $red,
+        "twitter": $yellow),
+    $colors);
+
+@each $name,
+$value in $colors {
+    .bi-#{$name} {
+        font-size: 2rem;
+        color: $value;
+    }
+}
