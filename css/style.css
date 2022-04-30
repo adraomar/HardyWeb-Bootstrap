@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;900&family=Roboto:wght@100;300;500;900&display=swap");
 * {
   padding: 0;
@@ -6,7 +5,7 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 480px) {
+@media (min-width: 576px) {
   footer {
     display: flex;
     flex-direction: column;
@@ -14,6 +13,21 @@
     align-items: center;
   }
 }
+.bi .bi-instagram:hover {
+  font-size: 2rem;
+  color: #B5E6F5;
+}
+
+.bi .bi-facebook:hover {
+  font-size: 2rem;
+  color: #ADC9EA;
+}
+
+.bi .bi-twitter:hover {
+  font-size: 2rem;
+  color: #FFB2AD;
+}
+
 body header .bg-image {
   width: 100%;
   height: 400px;
