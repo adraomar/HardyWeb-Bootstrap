@@ -1,0 +1,6 @@
+@mixin sizeImage($width, $height, $max-height, $opacity) {
+    width: $width;
+    height: $height;
+    max-height: $max-height;
+    opacity: $opacity;
+}

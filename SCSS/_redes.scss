@@ -1,0 +1,20 @@
+$instagram: #B5E6F5;
+$twitter: #FFB2AD;
+$facebook: #ADC9EA;
+
+$sociales: (
+    "instagram": $instagram,
+    "facebook": $facebook
+);
+
+$redes: map-merge($sociales, ("twitter": $twitter));
+
+@each $name,
+$value in $redes {
+    .bi {
+        .bi-#{$name}:hover {
+            font-size: 2rem;
+            color: $value;
+        }
+    }
+}

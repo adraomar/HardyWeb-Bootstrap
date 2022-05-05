@@ -1,0 +1,44 @@
+@import "fuentes";
+@import "reseteo";
+@import "mediasquerys";
+@import "mixins";
+@import "colores";
+@import "redes";
+
+body {
+    header {
+        .bg-image {
+            @include sizeImage(100%, 400px, 400px, 0.8);
+        }
+    }
+    .nav-item {
+        margin: 5px;
+        font-size: large;
+        color: $colBlanco !important;
+
+        &:hover {
+            background-color: $colGeneral;
+
+            animation: pulse;
+            animation-duration: 2s;
+        }
+
+        .nav-item a {
+            font-size: large;
+            color: $colBlanco !important;
+        }
+
+    }
+    .active {
+        background-color: $colGeneral;
+    }
+    .card-img-top:hover {
+        animation: heartBeat;
+        animation-duration: 2s;
+    }
+    footer {
+        a {
+            text-decoration: none;
+        }
+    }
+}

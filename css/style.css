@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;900&family=Roboto:wght@100;300;500;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;900&family=Roboto:wght@100;300;500;900&display=swap");
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -290,61 +290,60 @@ span {
 }
 
 .formulario {
+=======
+@media (min-width: 576px) {
+  footer {
+>>>>>>> SASS-2
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+.bi .bi-instagram:hover {
+  font-size: 2rem;
+  color: #B5E6F5;
 }
 
-.formulario input:focus {
-    outline: 0;
-    border: 1px solid #97d848;
+.bi .bi-facebook:hover {
+  font-size: 2rem;
+  color: #ADC9EA;
 }
 
-.formulario textarea:focus {
-    outline: 0;
-    border: 1px solid #97d848;
+.bi .bi-twitter:hover {
+  font-size: 2rem;
+  color: #FFB2AD;
 }
 
-@media screen and (min-width: 480px) {
-    nav ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+body header .bg-image {
+  width: 100%;
+  height: 400px;
+  max-height: 400px;
+  opacity: 0.8;
+}
+body .nav-item {
+  margin: 5px;
+  font-size: large;
+  color: #fff !important;
+}
+body .nav-item:hover {
+  background-color: rgb(125, 137, 247);
+  animation: pulse;
+  animation-duration: 2s;
+}
+body .nav-item .nav-item a {
+  font-size: large;
+  color: #fff !important;
+}
+body .active {
+  background-color: rgb(125, 137, 247);
+}
+body .card-img-top:hover {
+  animation: heartBeat;
+  animation-duration: 2s;
+}
+body footer a {
+  text-decoration: none;
 }
 
-@media (min-width: 700px) {
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
-    }
-
-    #section-a .content-text {
-        columns: 2;
-        column-gap: 2em;
-    }
-
-    #section-a .content-text p {
-        padding-top: 0;
-    }
-
-    .content-wrap,
-    #section-b ul {
-        grid-column: 2/4;
-    }
-
-    .box,
-    #main-footer div {
-        grid-column: span 2;
-    }
-
-    #section-b ul {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    #section-b li {
-        width: 31%;
-    }
-} */
-
+/*# sourceMappingURL=style.css.map */
